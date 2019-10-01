@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+div.formHolder {
+    height: 300px;
+    width: 400px;
+    display: block;
+    margin-left: calc(50% - 200px);
+}
