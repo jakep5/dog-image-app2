@@ -11,13 +11,13 @@ function getImages(images) {
         .then (response => response.json())
         .then (responseJson =>
             displayResults(responseJson))
-        /* .catch(error => alert ('There was an error, please try again.')); */
+        .catch(error => alert ('There was an error, please try again.'));
 }
 
 function displayResults(responseJson) {
     console.log(responseJson.message);
     let arrayUrl = responseJson.message;
-    for (let i=0; i<arrayUrl.length;i++) {
+    for (let i=0; i<=arrayUrl.length;i++) {
         $("div.images").append (
             `<img src="${arrayUrl[i]}" class="dogImages">`
         )
